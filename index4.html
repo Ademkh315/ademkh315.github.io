@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Boutique</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Fashion Boutique</h1>
+            <p>Style et Élégance</p>
+            <a href="#">Découvrez nos produits</a>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Catégories</h2>
+        <div class="categories">
+            <button class="toggle-btn" onclick="toggleSection('homme')">Homme</button>
+            <button class="toggle-btn" onclick="toggleSection('femme')">Femme</button>
+            <button class="toggle-btn" onclick="toggleSection('accessoires')">Accessoires</button>
+            <button class="toggle-btn" onclick="toggleSection('montres')">Montres</button>
+        </div>
+
+        <div id="homme" class="section-content">
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x250?text=T-shirt+Homme" alt="T-shirt Homme">
+                    <p>T-shirt Homme - 20DT</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x250?text=Jeans+Homme" alt="Jeans Homme">
+                    <p>Jeans Homme - 45DT</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x250?text=Veste+Homme" alt="Veste Homme">
+                    <p>Veste Homme - 60DT</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="femme" class="section-content">
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x250?text=Robe+Femme" alt="Robe Femme">
+                    <p>Robe Femme - 35DT</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x250?text=Jupe+Femme" alt="Jupe Femme">
+                    <p>Jupe Femme - 25DT</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x250?text=Blouse+Femme" alt="Blouse Femme">
+                    <p>Blouse Femme - 30DT</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="accessoires" class="section-content">
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x250?text=Ceinture" alt="Ceinture">
+                    <p>Ceinture - 15DT</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x250?text=Sac" alt="Sac">
+                    <p>Sac - 50DT</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x250?text=Chapeau" alt="Chapeau">
+                    <p>Chapeau - 20DT</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="montres" class="section-content">
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x250?text=Montre+Classique" alt="Montre Classique">
+                    <p>Montre Classique - 120DT</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x250?text=Montre+Sport" alt="Montre Sport">
+                    <p>Montre Sport - 150DT</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/200x250?text=Montre+Luxe" alt="Montre Luxe">
+                    <p>Montre Luxe - 300DT</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        function toggleSection(id) {
+            const sections = document.querySelectorAll('.section-content');
+            sections.forEach(section => {
+                if(section.id === id) {
+                    section.style.display = (section.style.display === 'block') ? 'none' : 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

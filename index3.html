@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Gourmet Resto</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Le Gourmet Resto</h1>
+            <p>Fine Dining Experience</p>
+            <a href="#">Réservez votre table</a>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Notre Menu</h2>
+        <div class="menu-category">
+            <button class="toggle-btn" onclick="toggleSection('entrees')">Entrées</button>
+            <div id="entrees" class="section-content">
+                <div class="menu">Soupe du jour - 10DT</div>
+                <div class="menu">Salade César - 12DT</div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <button class="toggle-btn" onclick="toggleSection('plats')">Plats principaux</button>
+            <div id="plats" class="section-content">
+                <div class="menu">Poulet rôti - 25DT</div>
+                <div class="menu">Lasagne - 22DT</div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <button class="toggle-btn" onclick="toggleSection('supplements')">Suppléments</button>
+            <div id="supplements" class="section-content">
+                <div class="menu">Sauce fromages - 3DT</div>
+                <div class="menu">Légumes grillés - 4DT</div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <button class="toggle-btn" onclick="toggleSection('boissons')">Boissons & Smoothies</button>
+            <div id="boissons" class="section-content">
+                <div class="menu">Eau - 3DT</div>
+                <div class="menu">Jus frais - 5DT</div>
+                <div class="menu">Smoothie - 8DT</div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <button class="toggle-btn" onclick="toggleSection('chicha')">Chicha</button>
+            <div id="chicha" class="section-content">
+                <div class="menu">Saveur pomme - 12DT</div>
+                <div class="menu">Menthe - 12DT</div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <button class="toggle-btn" onclick="toggleSection('specialites')">Spécialités du jour</button>
+            <div id="specialites" class="section-content">
+                <div class="menu">Filet de poisson - 28DT</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Nos Chefs</h2>
+        <button class="toggle-btn" onclick="toggleSection('chefs')">Voir les chefs</button>
+        <div id="chefs" class="section-content">
+            <div class="chefs">
+                <div class="chef">Chef Amine - Cuisine française</div>
+                <div class="chef">Chef Salma - Cuisine italienne</div>
+                <div class="chef">Chef Karim - Cuisine méditerranéenne</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleSection(id) {
+            const section = document.getElementById(id);
+            section.style.display = (section.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/* Style2.css pour Titan Gym Pro - Luxury Gold Premium */
+
+/* Reset basique */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+
+body { background-color: #0a0a0a; color: #fff; text-align: center; }
+
+a { color: #d4af37; text-decoration: none; transition: 0.3s; cursor: pointer; }
+a:hover { color: #fff; }
+
+/* Header / Hero */
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?fit=crop&w=1950&q=80') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 { font-size: 4rem; margin-bottom: 10px; }
+.hero p { font-size: 1.5rem; margin-bottom: 20px; }
+.hero a { padding: 10px 20px; border: 2px solid #d4af37; border-radius: 5px; font-weight: bold; }
+
+/* Sections */
+.section { padding: 50px 20px; }
+.section h2 { font-size: 2.5rem; margin-bottom: 30px; }
+.section-content { display: none; max-width: 800px; margin: 0 auto; text-align: center; }
+
+/* Boutons pour afficher les forfaits et coachs */
+.toggle-btn { display: inline-block; margin: 10px; padding: 10px 25px; border: 2px solid #d4af37; border-radius: 5px; font-weight: bold; }
+.toggle-btn:hover { background-color: #d4af37; color: #0a0a0a; }
+
+/* Forfaits & Coachs */
+.forfaits, .coachs { margin-top: 20px; display: flex; flex-direction: column; gap: 15px; text-align: center; }
+.forfait, .coach { padding: 15px; border: 1px solid #d4af37; border-radius: 8px; background-color: rgba(212,175,55,0.1); }

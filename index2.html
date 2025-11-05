@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Gym Pro</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Titan Gym Pro</h1>
+            <p>Luxury Fitness Club</p>
+            <a href="#">Rejoignez-nous</a>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Découvrez nos forfaits</h2>
+        <button class="toggle-btn" onclick="toggleSection('forfaits')">Voir les forfaits</button>
+        <div id="forfaits" class="section-content">
+            <div class="forfaits">
+                <div class="forfait">Forfait Mensuel - 50DT</div>
+                <div class="forfait">Forfait Trimestriel - 130DT</div>
+                <div class="forfait">Forfait Annuel - 480DT</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Rencontrez nos coachs</h2>
+        <button class="toggle-btn" onclick="toggleSection('coachs')">Voir les coachs</button>
+        <div id="coachs" class="section-content">
+            <div class="coachs">
+                <div class="coach">Coach Ahmed - Fitness & Musculation</div>
+                <div class="coach">Coach Lina - Yoga & Pilates</div>
+                <div class="coach">Coach Samir - Cardio & Crossfit</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleSection(id) {
+            const section = document.getElementById(id);
+            if(section.style.display === 'block') {
+                section.style.display = 'none';
+            } else {
+                section.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
