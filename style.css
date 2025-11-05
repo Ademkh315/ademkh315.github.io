@@ -67,6 +67,23 @@ header nav a:hover {
     margin-bottom: 2rem;
 }
 
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe57;
+}
+
 .btn {
     background-color: #ffdd59;
     color: #0077cc;
